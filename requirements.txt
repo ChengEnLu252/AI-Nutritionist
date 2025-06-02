@@ -1,0 +1,54 @@
+# Core NLP and LLM interaction
+openai
+sentence-transformers # 用於載入 embedding 模型如 intfloat/multilingual-e5-small [cite: 3]
+transformers # 用於載入和使用 ViT[cite: 4], SAM, Qwen [cite: 8] 等模型
+tiktoken # 常與 OpenAI 和 LangChain 一起使用
+
+# Gradio for UI
+gradio # 計畫書中提到 Gradio 4.28 [cite: 8]，你的 notebook 使用了 5.23.3。請確認你希望使用的版本。
+
+# RAG - Vector Store and Retrieval
+faiss-cpu # 或者 faiss-gpu 如果你有 NVIDIA GPU 並想使用它 [cite: 2]
+cohere # 用於 Cohere reDrank [cite: 3]
+
+torch
+torchvision
+torchaudio # 有時 torch 需要
+
+# Data Handling
+pandas # 用於處理食品營養資料庫
+
+# Multimodal (Image Processing)
+Pillow
+opencv-python # 可選，作為 Pillow 的補充或替代
+
+segment-anything-py # Meta SAM 官方套件 (通常是 pip install git+https://github.com/facebookresearch/segment-anything.git)
+opencv-python
+
+# Personalized Coach - Database, Cache, LangChain, Scheduling, Email
+supabase # Supabase Python client [cite: 6]
+redis # Redis Python client [cite: 6]
+langchain # LangChain 核心 [cite: 6]
+# langchain-openai # (根據需要安裝，LangChain 與 OpenAI 整合)
+# langchain-community # (根據需要安裝，LangChain 社群整合)
+SQLAlchemy # LangChain 的 SQLDatabaseChain 可能需要 [cite: 6]
+APScheduler # 用於排程任務，如每週報告 [cite: 6]
+sendgrid # 用於發送 Email [cite: 7]
+
+# Backend (FastAPI and Uvicorn are often dependencies of Gradio but can be listed explicitly)
+fastapi # [cite: 8]
+uvicorn # [cite: 8]
+python-multipart # FastAPI/Gradio 檔案上傳可能需要
+
+# Experiment Tracking
+wandb # Weights & Biases 用於追蹤實驗 [cite: 9]
+
+# (Optional) For LoRA fine-tuning with Hugging Face
+peft # [cite: 8]
+
+supabase
+
+langchain
+langchain-openai
+sqlalchemy
+psycopg2-binary
