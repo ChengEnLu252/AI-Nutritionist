@@ -77,3 +77,77 @@ AI-Nutritionist/
 ├── test_image/
 ├── test_sam_minimal.py
 └── README.md
+
+Demo Workflow
+
+Nutrition Chat
+
+Users can ask questions such as:
+	•	What foods are high in protein?
+	•	Is sweet potato a good choice for fat loss?
+	•	What should I eat after exercise?
+
+The system retrieves relevant food knowledge and generates grounded responses.
+
+Image-based Analysis
+
+Users can upload food-related images for analysis, enabling a richer and more interactive user experience.
+
+Health Coaching
+
+Users can input:
+	•	username
+	•	body weight
+	•	meal records
+	•	calorie information
+	•	health goals
+
+The system then generates personalized coaching suggestions based on recent records.
+
+Installation
+
+1. Clone the repository
+
+git clone https://github.com/ChengEnLu252/AI-Nutritionist.git
+cd AI-Nutritionist
+
+2. Install dependencies
+
+pip install -r requirements.txt
+
+3. Set environment variables
+
+Please configure the required API keys, database credentials, and model settings before running the app.
+
+4. Run the application
+
+python app.py
+
+Data and Model
+
+Due to file size limitations, some datasets and model files are stored externally:
+	•	Dataset: Google Drive link
+	•	Model: Google Drive link
+
+You may replace these links with your own hosted resources or Hugging Face assets in the future.
+
+My Contribution
+
+This project was independently designed and implemented as an AI application prototype covering:
+	•	system architecture design
+	•	RAG pipeline integration
+	•	multimodal module integration
+	•	Gradio interface development
+	•	health data interaction flow
+	•	personalized AI coaching logic
+
+Future Improvements
+	•	deploy online demo for public access
+	•	improve food image classification accuracy
+	•	add user authentication and dashboard
+	•	integrate calorie estimation from images
+	•	support long-term nutrition report generation
+
+Contact
+
+If you are interested in this project or would like to discuss collaboration, feel free to reach out through GitHub.
